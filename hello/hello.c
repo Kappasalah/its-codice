@@ -2,20 +2,25 @@
 
 int main()
 {
-    // Declare a variable to store the name (32 characters max)
-    char name[32];
+   
+    char name[50];
+    char surname[50];
+    char age[100];
 
-    // Print the "Hello World" message
-    printf("Hello World!!!\n\n\n");
 
-    // Ask for the name
-    printf("Enter a name: ");
+    printf("Welcome!\n\n\n");
+
+
+    printf("Enter your name: ");
+    printf("Enter your surname: ");
+    printf("Enter your age: ");
     
-    // Read the user's input
+    
     scanf("%s", name);
+    scanf("%s", surname);
+    scanf("%s", age);
 
-    // Print a message using the name entered
-    printf("\nHello\t%s\n\n\n", name);
+    printf("\nHello\t%s\n\n\n", name, surname);
 
     // Return 0 to indicate successful program termination
     return 0;
